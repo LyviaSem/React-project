@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "../App";
-import Panier from "../pages/Panier/Panier";
-import Home from "../pages/Home/Home";
+import Panier from "../pages/panier/panier";
+import Home from "../pages/home/home";
 import Products from "../pages/Products/Products";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import { productsLoader } from "../pages/Products/Products";

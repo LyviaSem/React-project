@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import Panier from "./pages/Panier/Panier";
-import Home from "./pages/Home/Home";
-import Footer from './Components/Footer/Footer';
-import Header from './Components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 import { Outlet } from 'react-router-dom';
 
 function App() {
