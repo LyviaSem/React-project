@@ -5,7 +5,7 @@ function TotalPrice({ items }) {
 
   return (
     <div>
-      Total: {total}
+      Total: {total}€
     </div>
   );
 }
