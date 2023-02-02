@@ -20,7 +20,8 @@ const AppRouter = () => {
                     children: [
                         {
                             index: true,
-                            element: <Home />
+                            element: <Home />,
+                            loader: productsLoader
                         },
                         {
                             path: "/panier",
