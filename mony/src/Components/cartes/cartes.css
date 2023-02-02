@@ -1,0 +1,25 @@
+.carte{
+    border: 1px solid black;
+    width: 180px;
+    height: 230px;
+}
+
+.titre-carte{
+    background-color: #DB2428;
+}
+
+.contenu-carte{
+}
+
+h2{
+    font-size: 13px;
+    text-align: center;
+    padding: 21px 0;
+    margin: 0;
+}
+
+h3{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Amaranth';
+}

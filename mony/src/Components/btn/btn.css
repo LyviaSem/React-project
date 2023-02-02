@@ -1,0 +1,10 @@
+.btn-commande{
+    background-color:#CCE3C6;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+}
