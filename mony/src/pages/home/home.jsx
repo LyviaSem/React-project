@@ -1,6 +1,7 @@
 import { getProduct } from "../../Services/Products.service"
 import { useLoaderData } from "react-router-dom";
 import {Link} from "react-router-dom";
+import Cartes from "../../components/cartes/cartes"
 
 
 
@@ -14,6 +15,7 @@ const Home = () =>{
              <ul>
                 {products.map((product) => <li key={product.id}> {product.category}</li>)}
             </ul> 
+            <Cartes />
         </main>
     )
 }
