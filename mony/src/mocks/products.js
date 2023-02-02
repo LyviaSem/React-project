@@ -5,7 +5,7 @@ export const PRODUCTS = [
         specificRegime: "meat",
         children: [
             {
-                //id: 1,
+                id: 1,
                 category: "salade",
                 title: "Salade César",
                 description: "Ceci est une chaise",
@@ -14,7 +14,7 @@ export const PRODUCTS = [
                 price: 50
             },
             {
-                //id: 2,
+                id: 2,
                 category: "salade",
                 title: "Salade Lyonnaise",
                 description: "Ceci est une chaise",
@@ -23,7 +23,7 @@ export const PRODUCTS = [
                 price: 50
             },
             {
-                //id: 3,
+                id: 3,
                 category: "salade",
                 title: "Salade Savoyarde",
                 description: "Ceci est une chaise",

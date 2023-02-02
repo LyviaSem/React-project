@@ -19,7 +19,7 @@ const ProductDetails = () =>{
     return (
         <main>
             <h1>{categoryTitle}</h1>
-            {children.map((child) => <p>{child.title} - {child.price}</p>)}
+            {children.map((child) => <p key={child.id}>{child.title} - {child.price}</p>)}
             <p>{description}</p>
         </main>
     )
