@@ -2,6 +2,21 @@ body{
     background-color: #F3F3F3;
 }
 
+.nav-item {
+    display: flex;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif, normal;
+    font-weight: 500;
+  }
+  
+.selected a{
+    border-bottom: 3px solid #C6E4C3;
+}
+  
 
 .nav{
     display: flex;
@@ -13,19 +28,7 @@ body{
     width: 110px;
 }
 
-
-ul{
+.elements-nav{
     display: flex;
     gap: 20px;
-}
-
-li{
-    list-style: none;
-}
-
-li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Montserrat', sans-serif, normal;
-    font-weight: 500;
 }
