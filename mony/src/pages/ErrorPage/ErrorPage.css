@@ -1,0 +1,24 @@
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin: 0;
+    font-size: 25px;
+}
+
+.mr-monop{
+    position: absolute;
+    opacity: 0.3;
+    max-height: 100%;
+    z-index: -1;
+}
+
+a{
+    text-decoration: underline;
+    color: #EB8B2C;
+    text-shadow: 0px 0px 3px lightgray;
+}

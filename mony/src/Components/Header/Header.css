@@ -1,10 +1,6 @@
-body{
-    background-color: #F3F3F3;
-}
-
 .nav-item {
     display: flex;
-  }
+}
   
   .nav-item a {
     text-decoration: none;
