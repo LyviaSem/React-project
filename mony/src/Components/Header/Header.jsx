@@ -17,7 +17,7 @@ const Nav = () => {
         <div className="nav">
 
             <div className="logo-nav">
-                <div className={selected === 0 ? "nav-item selected" : "nav-item"} onClick={() => handleClick(0)}>
+                <div className={"nav-item"} onClick={() => handleClick(0)}>
                     <NavLink to="/"><img className="logo" src={Logo} alt=""/></NavLink>
                 </div>
             </div>
