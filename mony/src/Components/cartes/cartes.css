@@ -4,8 +4,24 @@
     height: 230px;
 }
 
-.titre-carte{
+.titre-carte-rouge{
     background-color: #DB2428;
+}
+
+.titre-carte-jaune{
+    background-color:#FFF004;
+}
+
+.titre-carte-vert{
+    background-color:#12A858;
+}
+
+.titre-carte-bleu{
+    background-color:#0167A4;
+}
+
+.titre-carte-rose{
+    background-color:#C63883;
 }
 
 .contenu-carte{
