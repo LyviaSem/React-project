@@ -1,10 +1,10 @@
 import React from "react";
+import '../../pages/panier/Panier.css'
+import Poubelle from '../../img/poubelle.png'
 
 function QuantityPickers({ item, updateQuantity, removeItem }) {
   return (
     <tr>
-      <td>{item.name}</td>
-      <td>{item.price}</td>
       <td>
         <input
           type="number"
@@ -13,7 +13,7 @@ function QuantityPickers({ item, updateQuantity, removeItem }) {
         />
       </td>
       <td>
-        <button onClick={() => removeItem(item.id)}>Remove</button>
+        <button onClick={() => removeItem(item.id)}><img className="supp" src={Poubelle} alt=""/></button>
       </td>
     </tr>
   );
