@@ -5,9 +5,10 @@ section{
     align-items: center;
 }
 
-h2{
+.message-erreur{
     margin: 0;
     font-size: 25px;
+    font-weight: bold;
 }
 
 .mr-monop{
