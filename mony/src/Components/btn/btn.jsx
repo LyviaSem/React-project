@@ -1,8 +1,15 @@
-import './btn.css'
+import './btn.css';
+import { useNavigate } from "react-router-dom";
+//import AppRouter from '../../router/AppRouter';
 
-const Button = () => {
+const Button = (props) => {
+    const navigate = useNavigate();
+    const commandebtn = () =>{
+        navigate(`/commande/${props.idcategory}/${props.idregime}`);
+        console.log(props);
+    }
     return(
-        <input type="submit" className="btn-commande" value="Je commande"></input>
+        <button className="btn-commande" onClick={commandebtn}>je commande</button>
     )
 }
 
