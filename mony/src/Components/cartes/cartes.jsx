@@ -74,22 +74,6 @@ const Carte = (props) => {
                         </div>
                     </>
                     :
-                    (props.category === "Desserts") ?
-                    <>
-
-                        <div className="carte">
-
-                            <div className="titre-carte-rose">
-                                <h2>{props.type}</h2>
-                            </div>
-
-                            <div className="contenu-carte">
-                                <h3>{props.name}</h3>
-                                <Button idcategory={props.idcategory} idregime={props.idregime}/>
-                            </div>
-                        </div>
-                    </>
-                    :
                     ""
 
             }

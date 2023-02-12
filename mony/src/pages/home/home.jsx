@@ -2,6 +2,7 @@ import { getProduct, getProducts } from "../../Services/Products.service"
 import { useLoaderData,useNavigate } from "react-router-dom";
 import {Link} from "react-router-dom";
 import Cartes from "../../components/cartes/cartes"
+import './home.css'
 
 export const productsLoader = async () => {
     const products = await getProducts();
@@ -21,8 +22,9 @@ const Home = () =>{
                     {
                         return(
                             <div key={product.id}>
+                                <h6>{product.category}</h6>
                                 <ul>
-                                    <li>{product.category}</li>
+                                    {/* <li>{product.category}</li> */}
                                     {product.specificRegime.map((prod) => {
                                         return (
                                             

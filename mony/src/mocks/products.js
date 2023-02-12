@@ -10,22 +10,22 @@ export const PRODUCTS = [
                 plat: [
                     {
                         idplat: 1,
-                        title: "",
-                        ingredient: "",
-                        allergenes:"",
+                        title: "Le Cheddar Poulet",
+                        ingredient: "Oignons, Cornichons, Poulet panés, Cheddar, Sauce blanche",
+                        allergenes:"Gluten, Graine de sésame, Lait",
                         price: 50
                     },
                     {
                         idplat: 2,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Mexicain",
+                        ingredient: "Poulet panés, Guacamole, Tomates, Oignon, Mozarrella",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 3,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Chèvre Miel",
+                        ingredient: "Poulet panés, Chèvre, Sauce au miel, Salade, Tomate, Oignon caramélisé",
                         allergenes:"",
                         price: 50
                     }
@@ -40,22 +40,22 @@ export const PRODUCTS = [
                 plat: [
                     {
                         idplat: 4,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Raclette",
+                        ingredient: "Steak haché, Salade, Fromage à raclette, Sauce moutarde à l’ancienne, Tomates , Oignon",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 5,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Cheeseburger",
+                        ingredient: "Boeuf, Cornichon, Tomates, Cheddar, Ketchup",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 6,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Big Breakfast",
+                        ingredient: "Boeuf, Bacon, Cheddar, Oeuf, Oignon",
                         allergenes:"",
                         price: 50
                     }
@@ -70,22 +70,22 @@ export const PRODUCTS = [
                 plat: [
                     {
                         idplat: 7,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Chèvre Pané",
+                        ingredient: "Chèvre pané, Tomates, Salade, Sauce blanche",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 8,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Veggie Mexicain",
+                        ingredient: "Cheddar, Tomates, Choux, Avocat, Palet de légumes",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 9,
-                        title: "",
-                        ingredient: "",
+                        title: "Le Veggie Gouda",
+                        ingredient: "Salade, Gouda, Oignon, Sauce moutarde, Escalope végétarienne",
                         allergenes:"",
                         price: 50
                     }
@@ -107,22 +107,22 @@ export const PRODUCTS = [
                 plat: [
                     {
                         idplat: 10,
-                        title: "",
-                        ingredient: "",
+                        title: "La Margherita",
+                        ingredient: "Sauce tomate, Mozzarella, Basilic, Huile d’olive",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 11,
-                        title: "",
-                        ingredient: "",
+                        title: "La Saucisse Italienne",
+                        ingredient: "Sauce tomate, Mozzarella, Saucisses italiennes, Oignons rouge, Poivrons vert, origan",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 12,
-                        title: "",
-                        ingredient: "",
+                        title: "La Légumes Grillés",
+                        ingredient: "Sauce tomate, Mozzarella, Aubergines, Courgettes, Poivrons rouges, Oignons rouges, Origan",
                         allergenes:"",
                         price: 50
                     }
@@ -137,22 +137,22 @@ export const PRODUCTS = [
                 plat: [
                     {
                         idplat: 13,
-                        title: "",
-                        ingredient: "",
+                        title: "La Pepperoni",
+                        ingredient: "Sauce tomate, Mozzarella, Pepperoni, Champigons, Oignons rouges, Origan",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 14,
-                        title: "",
-                        ingredient: "",
+                        title: "La Quatre Fromages",
+                        ingredient: "Sauce tomate, Gorgonzola, Roquefort, Parmesan rapé, Basilic",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 15,
-                        title: "",
-                        ingredient: "",
+                        title: "La Jambon Champignons",
+                        ingredient: "Sauce tomate, Jambon, Mozzarella, Champignons, Origan",
                         allergenes:"",
                         price: 50
                     }
@@ -167,22 +167,22 @@ export const PRODUCTS = [
                 plat: [
                     {
                         idplat: 16,
-                        title: "",
-                        ingredient: "",
+                        title: "La Épinards Mozzarella",
+                        ingredient: "Épinards hachés, Mozzarella, Ricotta, Oignons, Origan",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 17,
-                        title: "",
-                        ingredient: "",
+                        title: "La Boursin",
+                        ingredient: "Tomates séchées, Boursin, Mozzarella, Ricotta, Origa",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 18,
-                        title: "",
-                        ingredient: "",
+                        title: "La Saumon Fumé",
+                        ingredient: "Saumon fumé, Mozzarella, Ricotta, Oignons, Origan",
                         allergenes:"",
                         price: 50
                     }
@@ -289,26 +289,26 @@ export const PRODUCTS = [
             {
                 idregime:10,
                 name: "Rue de la paix",
-                specificRegimeName: "pates 1",
+                specificRegimeName: "Pâtes Classique",
                 plat: [
                     {
                         idplat: 28,
-                        title: "",
-                        ingredient: "",
+                        title: "Carbonara",
+                        ingredient: "Tagliatelles, Oeufs, Pancetta, Pecorino, Sel, Poivre",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 29,
-                        title: "",
-                        ingredient: "",
+                        title: "Bolognaise",
+                        ingredient: "Spaghetti, Viande haché, Sauce tomate, Oignons, Sel, Poivre",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 30,
-                        title: "",
-                        ingredient: "",
+                        title: "Crevettes",
+                        ingredient: "Penne, Crevettes, Ail, Oignon, Poivron rouge, Crème fraiche, Sel, Poivre",
                         allergenes:"",
                         price: 50
                     }
@@ -319,26 +319,26 @@ export const PRODUCTS = [
             {
                 idregime:11,
                 name: "Avenue des champs-Elysées",
-                specificRegimeName: "Pates 2",
+                specificRegimeName: "Pâtes Veggie",
                 plat: [
                     {
                         idplat: 31,
-                        title: "",
-                        ingredient: "",
+                        title: "Primavera",
+                        ingredient: "Liguine, Courgettes, Poivron, Champignon, Crème, Sel, Poivre",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 32,
-                        title: "",
-                        ingredient: "",
+                        title: "Caponata",
+                        ingredient: "Spaghetti, Tomates, Aubergines, Oignon, Ail, Bouillon de légumes, Sel, Poivre",
                         allergenes:"",
                         price: 50
                     },
                     {
                         idplat: 33,
-                        title: "",
-                        ingredient: "",
+                        title: "Puttanesca",
+                        ingredient: "Tagliatelle, Olives, Anchois, Ail, Crème",
                         allergenes:"",
                         price: 50
                     }
