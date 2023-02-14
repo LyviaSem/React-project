@@ -1,31 +1,57 @@
 import { useLoaderData } from "react-router-dom";
 import {getProducts} from "../../Services/Products.service.js";
 import {Link} from "react-router-dom";
+import Button from "../../components/btn/btn.jsx";
+import React, { useState } from "react";
+import './Products.css'
 
-export const productsLoader = async () => {
-    const products = await getProducts();
-    return products;
-}
+    export const productsLoader = async () => {
+            const products = await getProducts();
+            return products;
+        }
 
-const Products = () => {
-    const products = useLoaderData();
-    const {categoryTitle, description, price, children} = useLoaderData();
-    console.log("products "+ products.children);
-    return(
-        <main>
-            <h1>Nos produits à l'uniter</h1>
-    
-            <ul>
-                {/* {products.map((product) => <li key={product.id}> {product.category}</li>)} */}
-                {products.map((product) =>
-                    {
-                        <button key={product.idcategory}>{product.category}</button>
-                        
-                    }
-                )}
+    const Products = () => {
+        const products = useLoaderData();
+      
+        const [showElements, setShowElements] = useState([false, false, false, false, false, false]);
+      
+        const toggleShowElement = (index) => {
+            setShowElements(prevState => {
+                return prevState.map((value, i) => {
+                return i === index ? !value : false;
+                });
+            });
+        };
+      
+        return (
+          <div>
+            <h1>Produits à l'unité</h1>
+            <ul className="produits-unite">
+              {products.map((product, index) => (
+                <div key={index} className={`cat-${product.category}`}>
+                  <li>
+                    <button onClick={() => toggleShowElement(index)}>
+                      <img className={product.category} src={product.image} alt={product.category} />
+                    </button>
+                  </li>
+      
+                  {showElements[index] && (
+                    <div>
+                      {product.specificRegime.map((regime) => (
+                        <div key={regime.id}>
+                          {regime.plat.map((plat) => (
+                            <p key={plat.idplat}>{plat.title}</p>
+                          ))}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
             </ul>
-        </main>
-    )
-}
+          </div>
+        );
+      };
 
 export default Products;
+      
