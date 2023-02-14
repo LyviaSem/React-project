@@ -26,44 +26,47 @@ function CartPage() {
   };
 
   return (
+    <div>
+    <h1>Panier</h1>
     
-    <div className="produits">
-      <div className="carteProduit">
-          <div className="fond-carte">
-              <div className="carte-panier">
-                  <div className="titre-carte">
-                      <h3>Avenue Matignon</h3>
-                  </div> 
-                  <div className="contenu-carte">
-                      <h4>Burger mexicain</h4>
-                      <p>poulet panés, guacamole, tomates, oignon, mozarrella</p>
-                      <h4>Accompagnement</h4>
-                      <p>Frite</p>
-                      <h4>Boisson</h4>
-                      <p>Coca</p>
-                      <h5>Total:10€</h5>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div className="nom-Produit">
-          <h2>Menu Avenue Matignon</h2>
-          <p>Burger poulet, frite, coca</p>
-          <p className="prix">10€</p>
-      </div>
-      <div className="quantite">
-        {cartItems.map((item) => (
-              <QuantityPickers
-                key={item.id}
-                item={item}
-                updateQuantity={updateQuantity}
-                removeItem={removeItem}
-              />
-            ))}
-          <TotalPrice items={cartItems}/>
-      </div>
-      <div>
-        
+      <div className="produits">
+        <div className="carteProduit">
+            <div className="fond-carte">
+                <div className="carte-panier">
+                    <div className="titre-carte">
+                        <h3>Avenue Matignon</h3>
+                    </div> 
+                    <div className="contenu-carte">
+                        <h4>Burger mexicain</h4>
+                        <p>poulet panés, guacamole, tomates, oignon, mozarrella</p>
+                        <h4>Accompagnement</h4>
+                        <p>Frite</p>
+                        <h4>Boisson</h4>
+                        <p>Coca</p>
+                        <h5>Total:10€</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="nom-Produit">
+            <h2>Menu Avenue Matignon</h2>
+            <p>Burger poulet, frite, coca</p>
+            <p className="prix">10€</p>
+        </div>
+        <div className="quantite">
+          {cartItems.map((item) => (
+                <QuantityPickers
+                  key={item.id}
+                  item={item}
+                  updateQuantity={updateQuantity}
+                  removeItem={removeItem}
+                />
+              ))}
+            <TotalPrice items={cartItems}/>
+        </div>
+        <div>
+          
+        </div>
       </div>
     </div>
   );

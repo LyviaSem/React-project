@@ -1,7 +1,15 @@
+import Burger from '../img/burger.png'
+import Pizza from '../img/pizza.png'
+import Salade from '../img/salade.png'
+import Pates from '../img/pates.png'
+import Boisson from '../img/boisson.png'
+import Dessert from '../img/dessert.png'
+
 export const PRODUCTS = [
     {
        idcategory: 1,
        category: "Burger",
+       image: Burger,
        specificRegime: [
             {
                 idregime:1,
@@ -112,6 +120,7 @@ export const PRODUCTS = [
     {
         idcategory: 2,
         category: "Pizza",
+        image: Pizza,
         specificRegime: [
             {
                 idregime:1,
@@ -208,6 +217,7 @@ export const PRODUCTS = [
     {
         idcategory: 3,
         category: "Salade",
+        image: Salade,
         specificRegime: [
             {
                 idregime: 7,
@@ -279,7 +289,7 @@ export const PRODUCTS = [
                     },
                     {
                         idplat: 26,
-                        title: "Chèvre Chaud",
+                        title: "Salade Chèvre Chaud",
                         ingredient: "Ceci est une chaise",
                         allergenes:"",
                         price: 50
@@ -298,6 +308,7 @@ export const PRODUCTS = [
     {
         idcategory: 4,
         category: "Pâtes",
+        image: Pates,
         specificRegime: [
             {
                 idregime:10,
@@ -361,97 +372,135 @@ export const PRODUCTS = [
             }
 
         ]
-     }//,
-    // {
-    //     idcategory: 5,
-    //     category: "Desserts",
-    //     specificRegime: [
-    //         {
-    //             idregime:12,
-    //             name: "Rue de paradis",
-    //             specificRegimeName: "dessert 1",
-    //             plat: [
-    //                 {
-    //                     idplat: 34,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 },
-    //                 {
-    //                     idplat: 35,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 },
-    //                 {
-    //                     idplat: 36,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 }
+    },
+    {
+        idcategory: 5,
+        category: "boisson",
+        image: Boisson,
+        specificRegime: [
+             {
+                 idregime:12,
+                 name: "",
+                 specificRegimeName: "Boissons",
+                 plat: [
+                     {
+                         idplat: 1,
+                         title: "Coca",
+                         ingredient: "",
+                         allergenes:"",
+                         price: 50
+                     },
+                     {
+                         idplat: 2,
+                         title: "Ice Tea",
+                         ingredient: "",
+                         allergenes:"",
+                         price: 50
+                     },
+                     {
+                         idplat: 3,
+                         title: "Oasis",
+                         ingredient: "",
+                         allergenes:"",
+                         price: 50
+                     }
+ 
+                 ]
+                 
+             },
+        ]
+     },
+    {
+        idcategory: 6,
+        category: "Desserts",
+        image: Dessert,
+        specificRegime: [
+            {
+                idregime:13,
+                name: "Rue de paradis",
+                specificRegimeName: "Glace",
+                plat: [
+                    {
+                        idplat: 34,
+                        title: "Glace vanille",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    },
+                    {
+                        idplat: 35,
+                        title: "Glace chocolat",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    },
+                    {
+                        idplat: 36,
+                        title: "Glace fraise",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    }
 
     //             ]
                 
-    //         },
-    //         {
-    //             idregime:13,
-    //             name: "Avenue de Neuilly",
-    //             specificRegimeName: "dessert 2",
-    //             plat: [
-    //                 {
-    //                     idplat: 37,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 },
-    //                 {
-    //                     idplat: 38,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 },
-    //                 {
-    //                     idplat: 39,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 }
+            },
+            {
+                idregime:14,
+                name: "Avenue de Neuilly",
+                specificRegimeName: "Gateau",
+                plat: [
+                    {
+                        idplat: 37,
+                        title: "Gateau chocolat",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    },
+                    {
+                        idplat: 38,
+                        title: "Gateau citron",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    },
+                    {
+                        idplat: 39,
+                        title: "Flan",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    }
 
     //             ]
                 
-    //         },
-    //         {
-    //             idregime:14,
-    //             name: "Boulevard de la villette",
-    //             specificRegimeName: "dessert 3",
-    //             plat: [
-    //                 {
-    //                     idplat: 40,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 },
-    //                 {
-    //                     idplat: 41,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 },
-    //                 {
-    //                     idplat: 42,
-    //                     title: "",
-    //                     ingredient: "",
-    //                     allergenes:"",
-    //                     price: 50
-    //                 }
+            },
+            {
+                idregime:15,
+                name: "Boulevard de la villette",
+                specificRegimeName: "Vieinnoiseries",
+                plat: [
+                    {
+                        idplat: 40,
+                        title: "Cookie",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    },
+                    {
+                        idplat: 41,
+                        title: "Muffin",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    },
+                    {
+                        idplat: 42,
+                        title: "Donuts",
+                        ingredient: "",
+                        allergenes:"",
+                        price: 50
+                    }
 
     //             ]
                 
