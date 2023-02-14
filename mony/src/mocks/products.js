@@ -17,12 +17,13 @@ export const PRODUCTS = [
                 specificRegimeName: "Burger Poulet",
                 accompaniments: [ 
                     { value: 'Frite', label: 'Frite' },
-                    { value: 'Salade', label: 'Salade' }
+                    { value: 'Salade', label: 'Salade' },
+
                 ],
                 desserts:[ 
-                    { value: 'glace', label: 'glace' },
-                    { value: 'crepe', label: 'crepe' },
-                    { value: 'gaufre', label: 'gaufre' }
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
                 ],
                 boissons: [
                     { value: 'Coca-Cola', label: 'Coca-Cola' },
@@ -36,21 +37,21 @@ export const PRODUCTS = [
                         idplat: 1,
                         title: "Le Cheddar Poulet",
                         ingredient: ["Oignons", "Cornichons", "Poulet panés", "Cheddar", "Sauce blanche"],
-                        allergenes:["Gluten", "Graine de sésame", "Lait"],
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 2,
                         title: "Le Mexicain",
                         ingredient: ["Poulet panés", "Guacamole", "Tomates", "Oignon", "Mozarrella"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 3,
                         title: "Le Chèvre Miel",
                         ingredient: ["Poulet panés", "Chèvre", "Sauce au miel", "Salade", "Tomate", "Oignon caramélisé"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     }
 
@@ -61,26 +62,42 @@ export const PRODUCTS = [
                 idregime:2,
                 name: "Boulevard Malesherbes",
                 specificRegimeName: "Burger Boeuf",
+                accompaniments: [ 
+                    { value: 'Frite', label: 'Frite' },
+                    { value: 'Salade', label: 'Salade' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 4,
                         title: "Le Raclette",
                         ingredient: ["Steak haché", "Salade", "Fromage à raclette", "Sauce moutarde à l’ancienne", "Tomates" , "Oignon"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 5,
                         title: "Le Cheeseburger",
                         ingredient: ["Boeuf", "Cornichon", "Tomates", "Cheddar", "Ketchup"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 6,
                         title: "Le Big Breakfast",
                         ingredient: ["Boeuf", "Bacon", "Cheddar", "Oeuf", "Oignon"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     }
 
@@ -91,26 +108,42 @@ export const PRODUCTS = [
                 idregime:3,
                 name: "Avenue Henry-Martin",
                 specificRegimeName: "Burger Veggie",
+                accompaniments: [ 
+                    { value: 'Frite', label: 'Frite' },
+                    { value: 'Salade', label: 'Salade' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 7,
                         title: "Le Chèvre Pané",
                         ingredient: ["Chèvre pané", "Tomates", "Salade", "Sauce blanche"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 8,
                         title: "Le Veggie Mexicain",
                         ingredient: ["Cheddar", "Tomates", "Choux", "Avocat", "Palet de légumes"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 9,
                         title: "Le Veggie Gouda",
                         ingredient: ["Salade", "Gouda", "Oignon", "Sauce moutarde", "Escalope végétarienne"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
                         price: 50
                     }
 
@@ -129,26 +162,42 @@ export const PRODUCTS = [
                 idregime:1,
                 name: "Faubourg Saint-Honoré",
                 specificRegimeName: "Pizza Napolitaine",
+                accompaniments: [ 
+                    { value: 'Sauce piquante', label: 'Sauce piquante' },
+                    { value: 'Sans sauce piquante', label: 'Sans sauce piquante' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 10,
                         title: "La Margherita",
                         ingredient: ["Sauce tomate", "Mozzarella", "Basilic", "Huile d’olive"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 11,
                         title: "La Saucisse Italienne",
                         ingredient: ["Sauce tomate", "Mozzarella", "Saucisses italiennes", "Oignons rouge", "Poivrons vert", "origan"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 12,
                         title: "La Légumes Grillés",
                         ingredient: ["Sauce tomate", "Mozzarella", "Aubergines", "Courgettes", "Poivrons rouges", "Oignons rouges", "Origan"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     }
 
@@ -159,26 +208,42 @@ export const PRODUCTS = [
                 idregime:2,
                 name: "Place de la Bourse",
                 specificRegimeName: "Pizza Classique",
+                accompaniments: [ 
+                    { value: 'Sauce piquante', label: 'Sauce piquante' },
+                    { value: 'Sans sauce piquante', label: 'Sans sauce piquante' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 13,
                         title: "La Pepperoni",
                         ingredient: ["Sauce tomate", "Mozzarella", "Pepperoni", "Champigons", "Oignons rouges", "Origan"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 14,
                         title: "La Quatre Fromages",
                         ingredient: ["Sauce tomate", "Gorgonzola", "Roquefort", "Parmesan rapé", "Basilic"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 15,
                         title: "La Jambon Champignons",
                         ingredient: ["Sauce tomate", "Jambon", "Mozzarella", "Champignons", "Origan"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     }
 
@@ -189,26 +254,42 @@ export const PRODUCTS = [
                 idregime:3,
                 name: "Rue Lafayette",
                 specificRegimeName: "Calzone",
+                accompaniments: [ 
+                    { value: 'Sauce piquante', label: 'Sauce piquante' },
+                    { value: 'Sans sauce piquante', label: 'Sans sauce piquante' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 16,
                         title: "La Épinards Mozzarella",
                         ingredient: ["Épinards hachés", "Mozzarella", "Ricotta", "Oignons", "Origan"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 17,
                         title: "La Boursin",
                         ingredient: ["Tomates séchées", "Boursin", "Mozzarella", "Ricotta", "Origa"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 18,
                         title: "La Saumon Fumé",
                         ingredient: ["Saumon fumé", "Mozzarella", "Ricotta", "Oignons", "Origan"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     }
 
@@ -223,37 +304,69 @@ export const PRODUCTS = [
         image: Salade,
         specificRegime: [
             {
-                idregime: 7,
+                idregime: 1,
                 name: "Boulevard des Capucines",
                 specificRegimeName: "Salade viande",
+                accompaniments: [ 
+                    { value: 'Pain', label: 'Pain' },
+                    { value: 'Sans Pain', label: 'Sans pain' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 19,
                         title: "Salade César",
-                        ingredient: "Ceci est une chaise",
-                        allergenes:"",
+                        ingredient: ["Salade verte", "Poulet", "Parmesan", "Crouton", "Sauce vinegrette"],
+                        allergenes:["lait, ", "Gluten"],
                         price: 50
                     },
                     {
                         idplat: 20,
                         title: "Salade Lyonnaise",
-                        ingredient: "Ceci est une chaise",
-                        allergenes:"",
+                        ingredient: ["Salade de saison","lard", "Oeuf", "Sauce vinegrette"],
+                        allergenes:"aucun",
                         price: 50
                     },
                     {
                         idplat: 21,
                         title: "Salade Savoyarde",
-                        ingredient: "Ceci est une chaise",
-                        allergenes:"",
+                        ingredient: ["Salade verte", "Tomate", "Champignon", "Jambon", "Pignon", "Crouton", "Fromage à raclette"],
+                        allergenes:["Gluteen, ", "Lait"],
                         price: 50
                     }
                 ]
             },
             {
-                idregime: 8,
+                idregime: 2,
                 name: "Avenue Foch",
                 specificRegimeName: "Salade Poisson",
+                accompaniments: [ 
+                    { value: 'Pain', label: 'Pain' },
+                    { value: 'Sans Pain', label: 'Sans pain' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 22,
@@ -279,9 +392,25 @@ export const PRODUCTS = [
                 ]
             },
             {
-                idregime: 9,
+                idregime: 3,
                 name: "Avenue de Breteuil",
                 specificRegimeName: "Salade Veggie",
+                accompaniments: [ 
+                    { value: 'Pain', label: 'Pain' },
+                    { value: 'Sans Pain', label: 'Sans pain' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 25,
@@ -314,29 +443,45 @@ export const PRODUCTS = [
         image: Pates,
         specificRegime: [
             {
-                idregime:10,
+                idregime:1,
                 name: "Rue de la paix",
                 specificRegimeName: "Pâtes Classique",
+                accompaniments: [ 
+                    { value: 'Parmesan', label: 'Parmasan' },
+                    { value: 'Sans Parmesan', label: 'Sans parmesant' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 28,
                         title: "Carbonara",
                         ingredient: ["Tagliatelles", "Oeufs", "Pancetta", "Pecorino", "Sel", "Poivre"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 29,
                         title: "Bolognaise",
                         ingredient: ["Spaghetti", "Viande haché", "Sauce tomate", "Oignons", "Sel", "Poivre"],
-                        allergenes:"",
+                        allergenes:["Gluten"],
                         price: 50
                     },
                     {
                         idplat: 30,
                         title: "Crevettes",
                         ingredient: ["Penne", "Crevettes", "Ail", "Oignon", "Poivron rouge", "Crème fraiche", "Sel", "Poivre"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait, ", "Crevette"],
                         price: 50
                     }
 
@@ -344,29 +489,45 @@ export const PRODUCTS = [
                 
             },
             {
-                idregime:11,
+                idregime:2,
                 name: "Avenue des champs-Elysées",
                 specificRegimeName: "Pâtes Veggie",
+                accompaniments: [ 
+                    { value: 'Parmesan', label: 'Parmasan' },
+                    { value: 'Sans Parmesan', label: 'Sans parmesant' }
+                ],
+                desserts:[ 
+                    { value: 'Donuts', label: 'Donuts' },
+                    { value: 'Mufin', label: 'Mufin' },
+                    { value: 'Glace', label: 'Glace' }
+                ],
+                boissons: [
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
+                ],
                 plat: [
                     {
                         idplat: 31,
                         title: "Primavera",
                         ingredient: ["Liguine", "Courgettes", "Poivron", "Champignon", "Crème", "Sel", "Poivre"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     },
                     {
                         idplat: 32,
                         title: "Caponata",
                         ingredient: ["Spaghetti", "Tomates", "Aubergines", "Oignon", "Ail", "Bouillon de légumes", "Sel", "Poivre"],
-                        allergenes:"",
+                        allergenes:["Gluten"],
                         price: 50
                     },
                     {
                         idplat: 33,
                         title: "Puttanesca",
                         ingredient: ["Tagliatelle", "Olives", "Anchois", "Ail", "Crème"],
-                        allergenes:"",
+                        allergenes:["Gluten, ", "Lait"],
                         price: 50
                     }
 
@@ -376,144 +537,5 @@ export const PRODUCTS = [
 
         ]
     },
-    {
-        idcategory: 5,
-        category: "boisson",
-        image: Boisson,
-        specificRegime: [
-             {
-                 idregime:12,
-                 name: "",
-                 specificRegimeName: "Boissons",
-                 plat: [
-                     {
-                         idplat: 1,
-                         title: "Coca",
-                         ingredient: "",
-                         allergenes:"",
-                         price: 50
-                     },
-                     {
-                         idplat: 2,
-                         title: "Ice Tea",
-                         ingredient: "",
-                         allergenes:"",
-                         price: 50
-                     },
-                     {
-                         idplat: 3,
-                         title: "Oasis",
-                         ingredient: "",
-                         allergenes:"",
-                         price: 50
-                     }
- 
-                 ]
-                 
-             },
-        ]
-     },
-    {
-        idcategory: 6,
-        category: "Desserts",
-        image: Dessert,
-        specificRegime: [
-            {
-                idregime:13,
-                name: "Rue de paradis",
-                specificRegimeName: "Glace",
-                plat: [
-                    {
-                        idplat: 34,
-                        title: "Glace vanille",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    },
-                    {
-                        idplat: 35,
-                        title: "Glace chocolat",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    },
-                    {
-                        idplat: 36,
-                        title: "Glace fraise",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    }
-
-
-               ]
-                
-            },
-            {
-                idregime:14,
-                name: "Avenue de Neuilly",
-                specificRegimeName: "Gateau",
-                plat: [
-                    {
-                        idplat: 37,
-                        title: "Gateau chocolat",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    },
-                    {
-                        idplat: 38,
-                        title: "Gateau citron",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    },
-                    {
-                        idplat: 39,
-                        title: "Flan",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    }
-
-
-                ]
-                
-
-            },
-            {
-                idregime:15,
-                name: "Boulevard de la villette",
-                specificRegimeName: "Vieinnoiseries",
-                plat: [
-                    {
-                        idplat: 40,
-                        title: "Cookie",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    },
-                    {
-                        idplat: 41,
-                        title: "Muffin",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    },
-                    {
-                        idplat: 42,
-                        title: "Donuts",
-                        ingredient: "",
-                        allergenes:"",
-                        price: 50
-                    }
-
-
-                 ]
-                
-             }
-
-         ]
-     }
 
 ]

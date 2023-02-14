@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const ModifButton = (props) => {
     const navigate = useNavigate();
     const modifbtn = () =>{
-        navigate(`/commande/${props.idcategory}/${props.idregime}/${props.idplat}`);
+        navigate(`/product/${props.idcategory}/${props.idregime}/${props.idplat}`);
         console.log(props);
     }
 
