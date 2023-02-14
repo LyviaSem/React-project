@@ -10,6 +10,7 @@ import { platsLoader } from "../pages/commande/commande";
 import { platLoader } from "../pages/ProductDetails/ProductDetails";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import Commande from "../pages/commande/commande";
+import Paiement from "../pages/Paiement/Paiement";
 
 const AppRouter = () => {
     const router = createBrowserRouter([
@@ -44,6 +45,10 @@ const AppRouter = () => {
                             path:"commande/:idcategory/:idregime",
                             element: <Commande />,
                             loader: platsLoader
+                        },
+                        {
+                            path:"paiement/",
+                            element: <Paiement />
                         }
                     ]
                 }
