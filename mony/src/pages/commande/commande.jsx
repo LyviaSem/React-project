@@ -1,6 +1,7 @@
 import { getPlats } from "../../Services/Products.service";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
+import CartButton from "../../components/Cartbtn/CartBtn";
 
 
 
@@ -88,6 +89,8 @@ const Commande = () =>{
             </select>
             <p>Vous avez sélectionné: {selectedDessert}</p>
             </div>
+
+            <CartButton />
 
 
             

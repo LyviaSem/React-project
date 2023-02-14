@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Button from "../../components/btn/btn";
+import CartButton from "../../components/Cartbtn/CartBtn";
 import Carte from "../../components/cartes/cartes";
 import { getPlat } from "../../Services/Products.service"
 
@@ -25,10 +26,12 @@ const ProductDetails = () =>{
              <h1>Detail produit</h1>
              <p>{produit.title}</p>
              {produit.ingredient.map((ingredient) =>
-                <li>{ingredient}</li>
+                <p>{ingredient}</p>
 
              )}
              <p>les alergennes: {produit.allergenes}</p>
+
+             <CartButton />
        </main>
 
     )
