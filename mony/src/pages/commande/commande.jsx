@@ -1,11 +1,11 @@
-import { getPlat } from "../../Services/Products.service";
+import { getPlats } from "../../Services/Products.service";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
 
 
 
-export const platLoader = async ({params}) => {
-    const product = await getPlat(+params.idcategory, +params.idregime);
+export const platsLoader = async ({params}) => {
+    const product = await getPlats(+params.idcategory, +params.idregime);
     console.log(product);
     if(!product){
         throw new Response("", {

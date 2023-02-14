@@ -6,7 +6,8 @@ import Products from "../pages/Products/Products";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import { productsLoader } from "../pages/Products/Products";
 import { productLoader } from "../pages/commande/commande";
-import { platLoader } from "../pages/commande/commande";
+import { platsLoader } from "../pages/commande/commande";
+import { platLoader } from "../pages/ProductDetails/ProductDetails";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import Commande from "../pages/commande/commande";
 
@@ -34,15 +35,15 @@ const AppRouter = () => {
                            element: <Products />,
                            loader: productsLoader 
                         },
-                        // {
-                        //     path:"products/:id",
-                        //     element: <ProductDetails />,
-                        //     loader: productLoader
-                        // },
+                        {
+                            path:"product/:idcategory/:idregime/:idplat",
+                            element: <ProductDetails />,
+                            loader: platLoader
+                        },
                         {
                             path:"commande/:idcategory/:idregime",
                             element: <Commande />,
-                            loader: platLoader
+                            loader: platsLoader
                         }
                     ]
                 }

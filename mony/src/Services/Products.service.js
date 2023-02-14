@@ -13,7 +13,7 @@ export const getPlats = (idcategory, idregime) => {
 }    
 
 export const getPlat = (idcategory, idregime, idplat) => {
-    return PRODUCTS[idcategory-1].specificRegime.find((prod) => prod.idregime === idregime)   
+    return PRODUCTS[idcategory-1].specificRegime[idregime-1].plat.find((plat) => plat.idplat === idplat)   
 }  
 
     
