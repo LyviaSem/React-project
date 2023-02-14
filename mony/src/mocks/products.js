@@ -25,8 +25,11 @@ export const PRODUCTS = [
                     { value: 'gaufre', label: 'gaufre' }
                 ],
                 boissons: [
-                    { value: 'Coca', label: 'Coca' },
-                    { value: 'Icetea', label: 'Icetea' }
+                    { value: 'Coca-Cola', label: 'Coca-Cola' },
+                    { value: 'Icetea', label: 'Icetea' },
+                    { value: 'Sprite', label: 'Sprite' },
+                    { value: 'Oasis', label: 'Oasis' },
+                    { value: 'Orangina', label: 'Orangina' }
                 ],
                 plat: [
                     {

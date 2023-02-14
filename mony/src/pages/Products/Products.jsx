@@ -5,6 +5,8 @@ import Button from "../../components/btn/btn.jsx";
 import React, { useState } from "react";
 import './Products.css'
 
+import ModifButton from "../../components/ModifBtn/ModifBtn.jsx";
+
     export const productsLoader = async () => {
             const products = await getProducts();
             return products;
@@ -38,9 +40,12 @@ import './Products.css'
                   {showElements[index] && (
                     <div>
                       {product.specificRegime.map((regime) => (
-                        <div key={regime.id}>
+                        <div key={regime.idregime}>
                           {regime.plat.map((plat) => (
+                            <>
                             <p key={plat.idplat}>{plat.title}</p>
+                            <ModifButton idcategory={product.idcategory} idregime={regime.idregime} idplat={plat.idplat}/>
+                            </>
                           ))}
                         </div>
                       ))}
