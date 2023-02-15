@@ -1,8 +1,8 @@
-import './btn.css';
+import './CommandeMenuBtn.css';
 import { useNavigate } from "react-router-dom";
-//import AppRouter from '../../router/AppRouter';
 
-const Button = (props) => {
+
+const CommandeMenuBtn = (props) => {
     const navigate = useNavigate();
     const commandebtn = () =>{
         navigate(`/commande/${props.idcategory}/${props.idregime}`);
@@ -12,4 +12,4 @@ const Button = (props) => {
     )
 }
 
-export default Button;
+export default CommandeMenuBtn;
