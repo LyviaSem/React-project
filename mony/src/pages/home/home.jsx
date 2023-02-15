@@ -26,7 +26,7 @@ const Home = () =>{
                                     {product.specificRegime.map((prod) => {
                                         return (
                                             
-                                            <Cartes category={product.category} type={prod.specificRegimeName} name={prod.name} idcategory={product.idcategory} idregime={prod.idregime} />
+                                            <Cartes key={prod.id} category={product.category} type={prod.specificRegimeName} name={prod.name} idcategory={product.idcategory} idregime={prod.idregime} />
                                         
                                         )
                                     } )}
