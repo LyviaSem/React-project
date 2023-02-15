@@ -1,4 +1,4 @@
-import { PRODUCTS } from "../mocks/products"
+import { PRODUCTS } from "../Mocks/Products"
 
 export const getProducts = async() => {
     return PRODUCTS;

@@ -31,3 +31,8 @@ button{
     border: none;
     background-color: transparent;
 }
+
+.produit{
+    border-bottom: solid black 1px;
+    
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import '../../pages/panier/Panier.css'
-import Poubelle from '../../img/poubelle.png'
+import '../../pages/Panier/Panier.css'
+import Poubelle from '../../Img/poubelle.png'
 
 function QuantityPickers({ item, updateQuantity, removeItem }) {
   return (

@@ -1,9 +1,7 @@
-import Burger from '../img/burger.png'
-import Pizza from '../img/pizza.png'
-import Salade from '../img/salade.png'
-import Pates from '../img/pates.png'
-import Boisson from '../img/boisson.png'
-import Dessert from '../img/dessert.png'
+import Burger from '../Img/burger.png'
+import Pizza from '../Img/pizza.png'
+import Salade from '../Img/salade.png'
+import Pates from '../Img/pates.png'
 
 export const PRODUCTS = [
     {
@@ -306,7 +304,7 @@ export const PRODUCTS = [
             {
                 idregime: 1,
                 name: "Boulevard des Capucines",
-                specificRegimeName: "Salade viande",
+                specificRegimeName: "Salade Viande",
                 accompaniments: [ 
                     { value: 'Pain', label: 'Pain' },
                     { value: 'Sans Pain', label: 'Sans pain' }

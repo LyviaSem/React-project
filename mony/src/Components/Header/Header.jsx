@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import './Header.css'
-import Logo from '../../img/logo_mony.svg'
+import Logo from '../../Img/logo_mony.svg'
 import '../../fonts.css'
 import React, { useState } from "react";
 

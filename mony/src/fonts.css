@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Amaranth';
-    src: url('./fonts/Amaranth-Regular.ttf') format('truetype');
+    src: url('./Fonts/Amaranth-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'Montserrat';
-    src: url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    src: url('./Fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   }

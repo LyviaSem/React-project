@@ -1,15 +1,14 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "../App";
-import Panier from "../pages/panier/panier";
-import Home from "../pages/home/home";
+import Panier from "../pages/Panier/Panier";
+import Home from "../pages/Home/Home";
 import Products from "../pages/Products/Products";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import { productsLoader } from "../pages/Products/Products";
-import { productLoader } from "../pages/commande/commande";
-import { platsLoader } from "../pages/commande/commande";
+import { platsLoader } from "../pages/Menu/Menu";
 import { platLoader } from "../pages/ProductDetails/ProductDetails";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
-import Commande from "../pages/commande/commande";
+import Menu from "../pages/Menu/Menu";
 import Paiement from "../pages/Paiement/Paiement";
 
 const AppRouter = () => {
@@ -43,7 +42,7 @@ const AppRouter = () => {
                         },
                         {
                             path:"commande/:idcategory/:idregime",
-                            element: <Commande />,
+                            element: <Menu />,
                             loader: platsLoader
                         },
                         {

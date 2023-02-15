@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
-import Logo from '../../img/logo_mony.svg'
+import Logo from '../../Img/logo_mony.svg'
 import './Paiement.css'
 
 const wait = function(duration = 1000){

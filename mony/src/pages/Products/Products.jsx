@@ -1,11 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import {getProducts} from "../../Services/Products.service.js";
-import {Link} from "react-router-dom";
-import Button from "../../components/btn/btn.jsx";
 import React, { useState } from "react";
 import './Products.css'
 
-import ModifButton from "../../components/ModifBtn/ModifBtn.jsx";
+import ModifButton from "../../components/ModifProduitBtn/ModifProduitBtn";
 
     export const productsLoader = async () => {
             const products = await getProducts();
@@ -43,8 +41,10 @@ import ModifButton from "../../components/ModifBtn/ModifBtn.jsx";
                         <div key={regime.idregime}>
                           {regime.plat.map((plat) => (
                             <>
+                            <div className="produit">
                             <p key={plat.idplat}>{plat.title}</p>
                             <ModifButton idcategory={product.idcategory} idregime={regime.idregime} idplat={plat.idplat}/>
+                            </div>
                             </>
                           ))}
                         </div>

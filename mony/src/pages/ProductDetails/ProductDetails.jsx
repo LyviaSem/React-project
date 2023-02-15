@@ -1,7 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import Button from "../../components/btn/btn";
-import CartButton from "../../components/Cartbtn/CartBtn";
-import Carte from "../../components/cartes/cartes";
+import CartButton from "../../components/AjoutPanierBtn/AjoutPanierBtn";
 import { getPlat } from "../../Services/Products.service"
 
 
@@ -23,13 +21,15 @@ const ProductDetails = () =>{
 
     return (
         <main>
-             <h1>Detail produit</h1>
-             <p>{produit.title}</p>
-             {produit.ingredient.map((ingredient) =>
-                <p>{ingredient}</p>
+            <h1>Detail produit</h1>
+            <div className="detail">
+                <p>{produit.title}</p>
+                {produit.ingredient.map((ingredient) =>
+                    <p>{ingredient}</p>
 
-             )}
-             <p>les alergennes: {produit.allergenes}</p>
+                )}
+                <p>les alergennes: {produit.allergenes}</p>
+            </div>
 
              <CartButton />
        </main>
