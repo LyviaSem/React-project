@@ -21,9 +21,8 @@ const ProductDetails = () =>{
 
     return (
         <main>
-            <h1>Detail produit</h1>
+            <h1>{produit.title}</h1>
             <div className="detail">
-                <p>{produit.title}</p>
                 {produit.ingredient.map((ingredient) =>
                     <p>{ingredient}</p>
 
