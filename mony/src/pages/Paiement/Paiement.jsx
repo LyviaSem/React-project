@@ -2,6 +2,9 @@ import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
 import Logo from '../../Img/logo_mony.svg'
 import './Paiement.css'
+import MrMonopoly from '../../Img/mr-monopoly.png'
+import { Link } from 'react-router-dom';
+import Button from "../../components/BtnPayer/BtnPayer"
 
 const wait = function(duration = 1000){
     return new Promise((resolve) =>
@@ -55,10 +58,12 @@ const Paiement = () => {
                                         })}/>
                                     {errors.code && <span>{errors.code.message}</span>}
                                 </div>
-                                <button className="btn-payer">Payer</button>
+                                <Link to="/paiementaccepte">
+                                    <Button></Button>
+                                </Link>
                             </div>
                             <div className="mr-monopoly">
-                                <img src="img/mr-monopoly.png" alt="" />
+                                <img src={MrMonopoly} alt="mr-monopoly"/>
                             </div>
                         </div>
                     

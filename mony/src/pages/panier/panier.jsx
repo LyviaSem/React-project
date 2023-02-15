@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import QuantityPickers from "../../components/QuantityPicker/QuantityPicker";
 import TotalPrice from "../../components/TotalPrice/TotalPrice";
 import './Panier.css'
+import { Link } from 'react-router-dom';
+import Button from "../../components/BtnValide/BtnValide"
 
 
 function CartPage() {
@@ -54,6 +56,9 @@ return (
         </tbody>
       </table>
       <TotalPrice items={cartItems} />
+      <Link to="/paiement">
+        <Button></Button>
+      </Link>
     </div> );
 }
 

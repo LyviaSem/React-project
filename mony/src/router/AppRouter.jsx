@@ -10,6 +10,8 @@ import { platLoader } from "../pages/ProductDetails/ProductDetails";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import Menu from "../pages/Menu/Menu";
 import Paiement from "../pages/Paiement/Paiement";
+import PaiementAccepte from "../pages/PaiementAccepte/PaiementAccepte";
+import Recap from "../pages/Recap/Recap"
 
 const AppRouter = () => {
     const router = createBrowserRouter([
@@ -48,6 +50,14 @@ const AppRouter = () => {
                         {
                             path:"paiement/",
                             element: <Paiement />
+                        },
+                        {
+                            path:"paiementaccepte/",
+                            element: <PaiementAccepte />
+                        },
+                        {
+                            path:"recapcommande/",
+                            element: <Recap />
                         }
                     ]
                 }
