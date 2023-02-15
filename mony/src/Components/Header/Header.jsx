@@ -18,7 +18,7 @@ const Nav = () => {
 
             <div className="logo-nav">
                 <div className={"nav-item"} onClick={() => handleClick(0)}>
-                    <NavLink to="/"><img className="logo" src={Logo} alt=""/></NavLink>
+                    <NavLink to="/"><img className="logo-header" src={Logo} alt=""/></NavLink>
                 </div>
             </div>
 

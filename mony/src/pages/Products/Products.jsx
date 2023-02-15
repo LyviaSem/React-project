@@ -2,7 +2,6 @@ import { useLoaderData } from "react-router-dom";
 import {getProducts} from "../../Services/Products.service.js";
 import React, { useState } from "react";
 import './Products.css'
-
 import ModifButton from "../../components/ModifProduitBtn/ModifProduitBtn";
 
     export const productsLoader = async () => {
