@@ -1,0 +1,25 @@
+.background{
+    background-color: #C6E4C3;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.mr-monop-argent{
+    width: 500px;
+}
+
+.btn-recap{
+    background-color:#fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    width: 30%;
+}
