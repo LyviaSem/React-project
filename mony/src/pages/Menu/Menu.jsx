@@ -8,7 +8,6 @@ import CartButton from "../../components/AjoutPanierBtn/AjoutPanierBtn";
 
 export const platsLoader = async ({params}) => {
     const product = await getPlats(+params.idcategory, +params.idregime);
-    console.log(product);
     if(!product){
         throw new Response("", {
             status: 404,
@@ -42,7 +41,7 @@ const Menu = () =>{
     const handleChangeAccompaniment = (e) => {
         setselectedAccompaniment(e.target.value);
     }
-
+    
    
 
     return (
