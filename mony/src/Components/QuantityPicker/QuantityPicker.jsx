@@ -12,17 +12,17 @@ const QuantityPickers = ({ item, updateQuantity, removeItem }) => {
 
 
   return (
-    <>
-      <td>
+    <><<<<<<< laure
+      <>
         <input
           type="number"
           value={item.quantity}
           onChange={(e) => updateQuantity(item.id, e.target.value)}
         />
-      </td>
-      <td>
+      </>
+      <>
         <button onClick={() => removeItem(item.id)}><img className="supp" src={Poubelle} alt=""/></button>
-      </td>
+      </>
     </>
   );
 }

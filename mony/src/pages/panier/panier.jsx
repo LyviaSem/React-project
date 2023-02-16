@@ -3,11 +3,12 @@ import QuantityPickers from "../../components/QuantityPicker/QuantityPicker";
 import TotalPrice from "../../components/TotalPrice/TotalPrice";
 import './Panier.css'
 import { Link } from 'react-router-dom';
-import Button from "../../components/Btn/BtnValidePanier"
-import ProductDetails from "../ProductDetails/ProductDetails"
+import Button from "../../components/Btn/BtnValidePanier";
 
-console.log(ProductDetails)
-function CartPage() {
+
+
+const Panier = () => {
+
   const [cartItems, setCartItems] = useState([
     { id: 1, name: "Avenue Matignon", price: 12, quantity: 1 },
     { id: 2, name: "Salade Lyonnaise", price: 10, quantity: 1 },
@@ -23,6 +24,8 @@ function CartPage() {
       )
     );
   };
+
+  console.log(cartItems)
 
   const removeItem = (id) => {
     setCartItems((prevState) => prevState.filter((item) => item.id !== id));
@@ -56,7 +59,6 @@ return (
               removeItem={removeItem}
               /></td>
             </tr>
-            
           ))}
         </tbody>
       </table>
@@ -67,5 +69,6 @@ return (
     </div> );
 }
 
-export default CartPage;
+
+export default Panier;
 
