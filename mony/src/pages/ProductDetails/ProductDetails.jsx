@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import CartButton from "../../components/Btn/AjoutPanierBtn";
 import { getPlat } from "../../services/Products.service"
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { StoreContext, StoreContextProvider, useStore } from "../../contexts/store.context";
 
 
 
@@ -20,27 +21,15 @@ export const platLoader = async ({params}) => {
 
 const ProductDetails = () =>{
     const produit = useLoaderData();
-    const [cartItems, setCartItems] = useState([]);
-
-    const addToCart = (item) => {
-        const newCartItems = [...cartItems, item];
-    
-        setCartItems(newCartItems);
-        console.log(newCartItems)
-    }
-
-    const handleAddToCart = () => {
-        addToCart({
-            ...produit,
-        });
-      };
-
-    
-
-
+    const store = useContext(StoreContext);
+    console.log(store.cart.products)
     return (
+<>
+
+
         <main>
             <h1>{produit.title}</h1>
+            
             <div className="detail">
                 {produit.ingredient.map((ingredient) =>
                     <p key={ingredient}>{ingredient}</p>
@@ -48,10 +37,10 @@ const ProductDetails = () =>{
                 )}
                 <p>les allergenes: {produit.allergenes}</p>
             </div>
-            <CartButton callback={() => handleAddToCart()}/>
-            {/* <CartButton callback={() => addToCart({...produit})}/> */}
+            <CartButton callback={() => store.cart.addToCart({...produit})}/>
+            {}
        </main>
-
+       </>
     )
 }
 
