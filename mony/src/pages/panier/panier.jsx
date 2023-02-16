@@ -69,4 +69,6 @@ return (
     </div> );
 }
 
+
 export default Panier;
+

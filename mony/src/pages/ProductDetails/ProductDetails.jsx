@@ -1,7 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import CartButton from "../../components/Btn/AjoutPanierBtn";
+
+import { useContext, useState } from "react";
+import { StoreContext, StoreContextProvider, useStore } from "../../contexts/store.context";
 import { getPlat } from "../../Services/Products.service"
-import { useState } from "react";
 import QuantityPicker from "../../components/QuantityPicker/QuantityPicker";
 
 
@@ -21,14 +23,11 @@ export const platLoader = async ({params}) => {
 
 const ProductDetails = () =>{
     const produit = useLoaderData();
-    const [cartItems, setCartItems] = useState([]);
+    const store = useContext(StoreContext);
+    console.log(store.cart.products)
+    return (
+<>
 
-    const addToCart = (item) => {
-        const newCartItems = [...cartItems, item];
-    
-        setCartItems(newCartItems);
-        console.log(newCartItems)
-    }
 
     const updateQuantity = (id, newQuantity) => {
         setCartItems((prevState) =>
@@ -40,7 +39,6 @@ const ProductDetails = () =>{
         );
       };
     
-      console.log(cartItems)
     
       const removeItem = (id) => {
         setCartItems((prevState) => prevState.filter((item) => item.id !== id));
@@ -48,9 +46,10 @@ const ProductDetails = () =>{
     
 
 
-    return (
+
         <main>
             <h1>{produit.title}</h1>
+            
             <div className="detail">
                 {produit.ingredient.map((ingredient) =>
                     <p key={ingredient}>{ingredient}</p>
@@ -59,13 +58,18 @@ const ProductDetails = () =>{
                 <p key={produit.allergenes}>les allergenes: {produit.allergenes}</p>
                 <p key={produit.price}>Prix: {produit.price}€</p>
             </div>
-            
+
             <QuantityPicker item={produit} updateQuantity={updateQuantity}
               removeItem={removeItem}/>
-            
-            <CartButton callback={() => addToCart({...produit})}/>
-       </main>
 
+            <CartButton callback={() => store.cart.addToCart({...produit})}/>
+
+            
+            
+            
+
+       </main>
+       </>
     )
 }
 
