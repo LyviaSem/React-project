@@ -46,10 +46,12 @@ const ProductDetails = () =>{
                     <p key={ingredient}>{ingredient}</p>
 
                 )}
-                <p>les allergenes: {produit.allergenes}</p>
+                <p key={produit.allergenes}>les allergenes: {produit.allergenes}</p>
+                <p key={produit.price}>Prix: {produit.price}€</p>
             </div>
-            <CartButton callback={() => handleAddToCart()}/>
-            {/* <CartButton callback={() => addToCart({...produit})}/> */}
+
+            
+            <CartButton callback={() => addToCart({...produit})}/>
        </main>
 
     )
