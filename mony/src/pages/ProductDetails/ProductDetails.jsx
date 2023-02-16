@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import CartButton from "../../components/Btn/AjoutPanierBtn";
-import { getPlat } from "../../Services/Products.service"
+import { getPlat } from "../../services/Products.service"
 import { useState } from "react";
 
 
@@ -20,18 +20,23 @@ export const platLoader = async ({params}) => {
 
 const ProductDetails = () =>{
     const produit = useLoaderData();
-    console.log(produit)
-    //const {cart: {addToCart}}= useStore();
     const [cartItems, setCartItems] = useState([]);
 
-    function addToCart(item) {
-        // Crée un nouveau tableau qui inclut l'objet item
+    const addToCart = (item) => {
         const newCartItems = [...cartItems, item];
     
-        // Met à jour l'état cartItems avec le nouveau tableau
         setCartItems(newCartItems);
         console.log(newCartItems)
     }
+
+    const handleAddToCart = () => {
+        addToCart({
+            ...produit,
+        });
+      };
+
+    
+
 
     return (
         <main>
@@ -43,7 +48,7 @@ const ProductDetails = () =>{
                 )}
                 <p>les allergenes: {produit.allergenes}</p>
             </div>
-            <button onClick={() => addToCart({produit})}>ajout panier</button>
+            <CartButton callback={() => handleAddToCart()}/>
             {/* <CartButton callback={() => addToCart({...produit})}/> */}
        </main>
 

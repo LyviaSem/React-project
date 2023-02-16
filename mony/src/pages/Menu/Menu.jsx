@@ -41,6 +41,21 @@ const Menu = () =>{
     const handleChangeAccompaniment = (e) => {
         setselectedAccompaniment(e.target.value);
     }
+
+    const [cartItems, setCartItems] = useState([]);
+
+    const addToCart = (item) => {
+        const newCartItems = [...cartItems, item];
+    
+        setCartItems(newCartItems);
+        console.log(newCartItems)
+    }
+
+    const handleAddToCart = () => {
+        addToCart({
+            ...products,
+        });
+      };
     
    
 
@@ -121,7 +136,7 @@ const Menu = () =>{
                     </select>
                 </div>
                 {selectedPlat && selectedAccompaniment && selectedBoisson && selectedDessert && <p>Vous avez choisi {selectedPlat} avec {selectedAccompaniment}, {selectedBoisson} et {selectedDessert}</p>}
-                <CartButton />
+                <CartButton callback={() => handleAddToCart()}/>
             </div>
            
         </main>
