@@ -5,7 +5,6 @@ import './Paiement.css'
 import MrMonopoly from '../../Img/mr-monopoly.png'
 import { Link } from 'react-router-dom';
 import Button from "../../components/Btn/BtnPayer"
-//import { useParams } from 'react-router-dom'
 
 const wait = function(duration = 1000){
     return new Promise((resolve) =>

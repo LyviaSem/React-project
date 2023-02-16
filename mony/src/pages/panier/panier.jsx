@@ -4,8 +4,9 @@ import TotalPrice from "../../components/TotalPrice/TotalPrice";
 import './Panier.css'
 import { Link } from 'react-router-dom';
 import Button from "../../components/Btn/BtnValidePanier"
+import ProductDetails from "../ProductDetails/ProductDetails"
 
-
+console.log(ProductDetails)
 function CartPage() {
   const [cartItems, setCartItems] = useState([
     { id: 1, name: "Avenue Matignon", price: 12, quantity: 1 },
@@ -27,6 +28,7 @@ function CartPage() {
     setCartItems((prevState) => prevState.filter((item) => item.id !== id));
   };
 
+
   const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
 return (
@@ -46,22 +48,21 @@ return (
             <tr>
               <td>{item.name}</td>
               <td>{item.price}</td>
-              <td><QuantityPickers
+              <td>
+              <QuantityPickers
               key={item.id}
               item={item}
               updateQuantity={updateQuantity}
               removeItem={removeItem}
-            /></td>
+              /></td>
             </tr>
             
           ))}
         </tbody>
       </table>
-      {/* <TotalPrice items={cartItems} /> */}
       <div>
         Total: {total}€
       </div>
-      {console.log(cartItems.price)}
         <Button total={total}/>
     </div> );
 }

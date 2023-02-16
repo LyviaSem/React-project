@@ -1,11 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import './StyleBtn.css'
+import { useState } from "react";
 
 const AjoutPanierBtn = (props) => {
-    const ajoutPanier = () =>{
-    }
+    const {callback} = props
+
+    
     return(
-        <button className="btn-vert" >Ajouter au panier</button>
+        <button className="btn-vert" onClick={callback}>Ajouter au panier</button>
     )
 }
 
