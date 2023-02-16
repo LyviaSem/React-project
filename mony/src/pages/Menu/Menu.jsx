@@ -1,4 +1,4 @@
-import { getPlats } from "../../services/Products.service";
+import { getPlats } from "../../Services/Products.service";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
 import './Menu.css'
@@ -135,8 +135,15 @@ const Menu = () =>{
                         )}
                     </select>
                 </div>
-                {selectedPlat && selectedAccompaniment && selectedBoisson && selectedDessert && <p>Vous avez choisi {selectedPlat} avec {selectedAccompaniment}, {selectedBoisson} et {selectedDessert}</p>}
-                <CartButton callback={() => handleAddToCart()}/>
+                {selectedPlat && selectedAccompaniment && selectedBoisson && selectedDessert ? (
+        <div>
+          <p>Vous avez choisi {selectedPlat} avec {selectedAccompaniment}, {selectedBoisson} et {selectedDessert}</p>
+          <p>Total: {products.menu_price}€</p>
+          <CartButton />
+        </div>
+      ) : (
+        <p className="error-message">Veuillez sélectionner une option pour chaque catégorie.</p>
+      )}
             </div>
            
         </main>

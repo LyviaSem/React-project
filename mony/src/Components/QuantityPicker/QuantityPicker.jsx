@@ -12,7 +12,7 @@ const QuantityPickers = ({ item, updateQuantity, removeItem }) => {
 
 
   return (
-    <><<<<<<< laure
+    <>
       <>
         <input
           type="number"
