@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import CartButton from "../../components/AjoutPanierBtn/AjoutPanierBtn";
+import CartButton from "../../components/Btn/AjoutPanierBtn";
 import { getPlat } from "../../Services/Products.service"
 
 

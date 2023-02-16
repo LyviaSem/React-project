@@ -1,4 +1,4 @@
-import './CommandeMenuBtn.css';
+import './StyleBtn.css';
 import { useNavigate } from "react-router-dom";
 
 
@@ -8,7 +8,7 @@ const CommandeMenuBtn = (props) => {
         navigate(`/commande/${props.idcategory}/${props.idregime}`);
     }
     return(
-        <button className="btn-commande" onClick={commandebtn}>je commande</button>
+        <button className="btn-vert" onClick={commandebtn}>je commande</button>
     )
 }
 

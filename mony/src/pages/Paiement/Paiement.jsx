@@ -1,10 +1,11 @@
 import { useForm } from 'react-hook-form'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Logo from '../../Img/logo_mony.svg'
 import './Paiement.css'
 import MrMonopoly from '../../Img/mr-monopoly.png'
 import { Link } from 'react-router-dom';
-import Button from "../../components/BtnPayer/BtnPayer"
+import Button from "../../components/Btn/BtnPayer"
+//import { useParams } from 'react-router-dom'
 
 const wait = function(duration = 1000){
     return new Promise((resolve) =>
@@ -15,14 +16,14 @@ const Paiement = () => {
     const {register, handleSubmit, formState: {errors}} = useForm();
     console.log(errors)
 
+    const navigate = useNavigate()
     const onSubmit = async (data) =>{
         await wait(2000)
+        navigate("/paiementaccepte")
     }
 
-    const navigate = useNavigate();
-    const recapbtn = () =>{
-        navigate(`/recap`);
-    }
+    const params = useParams()
+    console.log(params)
 
 
     return(
@@ -30,7 +31,7 @@ const Paiement = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="paiement">
                     <img src={Logo} alt="logo mony" className="logo" />
-                        <h2>Vous devez 40€ à la banque</h2>
+                        <h2>Vous devez {params.total}€ à la banque</h2>
                         <div className="infos-carte">
                             <div className="infos-paiement">
                                 <div className="num-carte">
@@ -58,9 +59,7 @@ const Paiement = () => {
                                         })}/>
                                     {errors.code && <span>{errors.code.message}</span>}
                                 </div>
-                                <Link to="/paiementaccepte">
-                                    <Button></Button>
-                                </Link>
+                                    <Button />
                             </div>
                             <div className="mr-monopoly">
                                 <img src={MrMonopoly} alt="mr-monopoly"/>

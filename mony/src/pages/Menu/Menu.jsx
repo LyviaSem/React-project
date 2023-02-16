@@ -2,7 +2,7 @@ import { getPlats } from "../../Services/Products.service";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
 import './Menu.css'
-import CartButton from "../../components/AjoutPanierBtn/AjoutPanierBtn";
+import CartButton from "../../components/Btn/AjoutPanierBtn";
 
 
 
