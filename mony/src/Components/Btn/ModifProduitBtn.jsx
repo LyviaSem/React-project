@@ -10,7 +10,7 @@ const ModifButton = (props) => {
 
 
     return(
-        <button className="btn-vert" onClick={modifbtn}>modifier</button>
+        <button className="btn-vert" onClick={modifbtn}>Informations</button>
     )
 }
 
