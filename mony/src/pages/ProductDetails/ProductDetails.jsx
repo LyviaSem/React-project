@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import CartButton from "../../components/Btn/AjoutPanierBtn";
-import { getPlat } from "../../services/Products.service"
+import { getPlat } from "../../Services/Products.service"
 import { useState } from "react";
+import QuantityPicker from "../../components/QuantityPicker/QuantityPicker";
 
 
 
@@ -29,12 +30,21 @@ const ProductDetails = () =>{
         console.log(newCartItems)
     }
 
-    const handleAddToCart = () => {
-        addToCart({
-            ...produit,
-        });
+    const updateQuantity = (id, newQuantity) => {
+        setCartItems((prevState) =>
+          prevState.map((item) =>
+            item.id === id
+              ? { ...item, quantity: newQuantity }
+              : { ...item }
+          )
+        );
       };
-
+    
+      console.log(cartItems)
+    
+      const removeItem = (id) => {
+        setCartItems((prevState) => prevState.filter((item) => item.id !== id));
+      };
     
 
 
@@ -49,7 +59,9 @@ const ProductDetails = () =>{
                 <p key={produit.allergenes}>les allergenes: {produit.allergenes}</p>
                 <p key={produit.price}>Prix: {produit.price}€</p>
             </div>
-
+            
+            <QuantityPicker item={produit} updateQuantity={updateQuantity}
+              removeItem={removeItem}/>
             
             <CartButton callback={() => addToCart({...produit})}/>
        </main>

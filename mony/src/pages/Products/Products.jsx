@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import {getProducts} from "../../services/Products.service.js";
+import {getProducts} from "../../Services/Products.service.js";
 import React, { useState } from "react";
 import './Products.css'
 import ModifButton from "../../components/Btn/ModifProduitBtn";

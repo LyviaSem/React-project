@@ -15,8 +15,8 @@ const BtnAccueil = () => {
     navigate("/")
 }
 
-const params = useParams()
-    console.log(params)
+// const params = useParams()
+//     console.log(params)
 
 
     const randomNumbers = Math.floor(Math.random() * 100) + 1;
@@ -33,18 +33,18 @@ const params = useParams()
                 <h2>Rendez-vous à la table n°{randomNumber}</h2>
             <div className="recap-commande">
                 <div clasName="commande">
-                    {params.map((menu) => 
+                    {/* {params.map((menu) => 
                         {
                             return(
                                 <p>{menu.name}</p>
                             )
                         }
-                    )}
-                    {/* <p>Menu Avenue Matignon x1 15€</p>
+                    )} */}
+                    <p>Menu Avenue Matignon x1 15€</p>
                     <p>Pâtes Bolognaise x1 10€</p>
                     <p>Tiramisu x2 15€</p>
                     <p>Ice Tea x1 5€</p>
-                    <p>Total: 45€</p> */}
+                    <p>Total: 45€</p>
                 </div>
                 <div className="carte-chance">
                     <img src={CarteChance} alt=""/>
