@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import './ModifProduitBtn.css'
+import './StyleBtn.css'
 
 const ModifButton = (props) => {
     const navigate = useNavigate();
@@ -10,7 +10,7 @@ const ModifButton = (props) => {
 
 
     return(
-        <button className="btn-modif" onClick={modifbtn}>modifier</button>
+        <button className="btn-vert" onClick={modifbtn}>modifier</button>
     )
 }
 

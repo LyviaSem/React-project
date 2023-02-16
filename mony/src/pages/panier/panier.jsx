@@ -3,7 +3,7 @@ import QuantityPickers from "../../components/QuantityPicker/QuantityPicker";
 import TotalPrice from "../../components/TotalPrice/TotalPrice";
 import './Panier.css'
 import { Link } from 'react-router-dom';
-import Button from "../../components/BtnValide/BtnValide"
+import Button from "../../components/Btn/BtnValidePanier"
 
 
 function CartPage() {
@@ -26,6 +26,8 @@ function CartPage() {
   const removeItem = (id) => {
     setCartItems((prevState) => prevState.filter((item) => item.id !== id));
   };
+
+  const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
 return (
 
@@ -55,10 +57,12 @@ return (
           ))}
         </tbody>
       </table>
-      <TotalPrice items={cartItems} />
-      <Link to="/paiement">
-        <Button></Button>
-      </Link>
+      {/* <TotalPrice items={cartItems} /> */}
+      <div>
+        Total: {total}€
+      </div>
+      {console.log(cartItems.price)}
+        <Button total={total}/>
     </div> );
 }
 

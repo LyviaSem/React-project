@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router-dom";
-import CartButton from "../../components/AjoutPanierBtn/AjoutPanierBtn";
-import { getPlat } from "../../services/Products.service"
+import CartButton from "../../components/Btn/AjoutPanierBtn";
+import { getPlat } from "../../Services/Products.service"
 import { useState } from "react";
-//import { useStore } from "../../contexts/store.context";
+
 
 
 export const platLoader = async ({params}) => {

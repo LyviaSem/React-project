@@ -38,25 +38,25 @@ const AppRouter = () => {
                            loader: productsLoader 
                         },
                         {
-                            path:"product/:idcategory/:idregime/:idplat",
+                            path:"/product/:idcategory/:idregime/:idplat",
                             element: <ProductDetails />,
                             loader: platLoader
                         },
                         {
-                            path:"commande/:idcategory/:idregime",
+                            path:"/commande/:idcategory/:idregime",
                             element: <Menu />,
                             loader: platsLoader
                         },
                         {
-                            path:"paiement/",
+                            path:"/paiement/:total",
                             element: <Paiement />
                         },
                         {
-                            path:"paiementaccepte/",
+                            path:"/paiementaccepte",
                             element: <PaiementAccepte />
                         },
                         {
-                            path:"recapcommande/",
+                            path:"/recapcommande",
                             element: <Recap />
                         }
                     ]

@@ -1,4 +1,4 @@
-import Button from '../CommandeMenuBtn/CommandeMenuBtn'
+import Button from '../Btn/CommandeMenuBtn'
 import './Cartes.css'
 import { useNavigate } from "react-router-dom";
 
