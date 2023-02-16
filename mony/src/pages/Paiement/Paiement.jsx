@@ -15,13 +15,10 @@ const Paiement = () => {
     const {register, handleSubmit, formState: {errors}} = useForm();
     console.log(errors)
 
-    const onSubmit = async (data) =>{
-        await wait(2000)
-    }
-
     const navigate = useNavigate();
-    const recapbtn = () =>{
-        navigate(`/recap`);
+    const onSubmit = async (data) =>{
+        await wait(1000)
+        navigate(`/panier`);
     }
 
 
@@ -46,7 +43,8 @@ const Paiement = () => {
                                 
                                 <div className="date-carte">
                                     <label htmlFor="date"> Date d'expiration</label>
-                                    <input type="text" name="date" {...register("date", {required: true})}/>
+                                    <input type="text" name="date" {...register("date", {required: 'Vous devez rentrer la date d\'expiration'})}/>
+                                    {errors.date && <span>{errors.date.message}</span>}
                                 </div>
                                 
                                 <div className="code-carte">

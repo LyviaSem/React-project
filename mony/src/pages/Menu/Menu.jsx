@@ -1,4 +1,4 @@
-import { getPlats } from "../../Services/Products.service";
+import { getPlats } from "../../services/Products.service";
 import { useLoaderData } from "react-router-dom";
 import { useState } from "react";
 import './Menu.css'
