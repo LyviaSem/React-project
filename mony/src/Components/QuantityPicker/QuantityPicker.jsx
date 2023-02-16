@@ -1,10 +1,18 @@
 import React from "react";
 import '../../pages/Panier/Panier.css'
 import Poubelle from '../../Img/poubelle.png'
+import { useEffect } from "react";
 
-function QuantityPickers({ item, updateQuantity, removeItem }) {
+const QuantityPickers = ({ item, updateQuantity, removeItem }) => {
+  useEffect(() => {
+    if (parseInt(item.quantity) === 0) {
+      removeItem(item.id);
+    }
+  }, [item.quantity]);
+
+
   return (
-    <>
+    <><<<<<<< laure
       <>
         <input
           type="number"

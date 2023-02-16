@@ -8,6 +8,7 @@ import Button from "../../components/Btn/BtnValidePanier";
 
 
 const Panier = () => {
+
   const [cartItems, setCartItems] = useState([
     { id: 1, name: "Avenue Matignon", price: 12, quantity: 1 },
     { id: 2, name: "Salade Lyonnaise", price: 10, quantity: 1 },
@@ -30,6 +31,7 @@ const Panier = () => {
     setCartItems((prevState) => prevState.filter((item) => item.id !== id));
   };
 
+
   const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
 return (
@@ -49,12 +51,13 @@ return (
             <tr>
               <td>{item.name}</td>
               <td>{item.price}</td>
-              <td><QuantityPickers
+              <td>
+              <QuantityPickers
               key={item.id}
               item={item}
               updateQuantity={updateQuantity}
               removeItem={removeItem}
-            /></td>
+              /></td>
             </tr>
           ))}
         </tbody>
@@ -62,8 +65,7 @@ return (
       <div>
         Total: {total}€
       </div>
-      {console.log(cartItems.price)}
-        <Button cartItem={cartItems} total={total}/>
+        <Button total={total}/>
     </div> );
 }
 
