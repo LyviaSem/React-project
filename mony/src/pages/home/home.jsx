@@ -1,4 +1,4 @@
-import { getProducts } from "../../Services/Products.service"
+import { getProducts } from "../../services/Products.service"
 import { useLoaderData,useNavigate } from "react-router-dom";
 import Cartes from "../../components/Cartes/Cartes"
 import './Home.css'

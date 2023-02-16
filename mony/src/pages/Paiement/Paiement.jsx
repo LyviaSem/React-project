@@ -18,12 +18,13 @@ const Paiement = () => {
 
     const navigate = useNavigate()
     const onSubmit = async (data) =>{
-        await wait(2000)
+        await wait(1000)
         navigate("/paiementaccepte")
     }
 
     const params = useParams()
     console.log(params)
+
 
 
     return(
@@ -47,7 +48,8 @@ const Paiement = () => {
                                 
                                 <div className="date-carte">
                                     <label htmlFor="date"> Date d'expiration</label>
-                                    <input type="text" name="date" {...register("date", {required: true})}/>
+                                    <input type="text" name="date" {...register("date", {required: 'Vous devez rentrer la date d\'expiration'})}/>
+                                    {errors.date && <span>{errors.date.message}</span>}
                                 </div>
                                 
                                 <div className="code-carte">
