@@ -1,0 +1,31 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+th {
+  background-color: #CCE3C6;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.details-produit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding-left: 25px;
+  list-style-type: circle;
+}
+
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}

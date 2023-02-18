@@ -1,0 +1,16 @@
+.quantity-picker {
+    display: flex;
+    column-gap: 10px;
+}
+
+.quantity-picker input {
+    cursor: pointer;
+}
+
+.supp {
+    width: 20px;
+}
+
+.supp:hover {
+    background-color: #CCE3C6;
+}

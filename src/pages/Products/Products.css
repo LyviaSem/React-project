@@ -1,0 +1,40 @@
+.produits-unite {
+    display: flex;
+    justify-content: center;
+    column-gap: 90px;
+}
+
+ul {
+    list-style: none;
+}
+
+.category {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+li img {
+    width: 100px;
+}
+
+.button-container {
+    width: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.button-container:hover {
+    background-color: #CCE3C6;
+    border-radius: 100%;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.produit {
+    border-bottom: solid black 1px;
+}

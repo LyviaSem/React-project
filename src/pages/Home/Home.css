@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    font-family: amaranth;
+    margin: 40px 0;
+}
+
+.regimes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+    gap: 180px;
+}
+
+h6{
+    font-family: amaranth;
+    margin-left: 80px;
+    font-size: 20px;
+}
+
