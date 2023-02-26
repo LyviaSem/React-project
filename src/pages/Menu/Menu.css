@@ -1,0 +1,54 @@
+.carte-menu {
+    border: 1px solid black;
+    width: 500px;
+    height: 550px;
+    margin: 0 auto;
+}
+
+.titre-carte-rouge {
+    background-color: #DB2428;
+}
+
+.titre-carte-jaune {
+    background-color:#FFF004;
+}
+
+.titre-carte-vert {
+    background-color:#12A858;
+}
+
+.titre-carte-bleu {
+    background-color:#0167A4;
+}
+
+.error-message, .success-message, .total, .info-message {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif, normal;
+    font-weight: 450;
+}
+
+.success-message {
+    color: rgb(86, 162, 86);
+}
+
+.error-message {
+    color: #ce0000;
+}
+
+select {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif, normal;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.quantity-picker-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 20px;
+   margin-top: 20px;
+}

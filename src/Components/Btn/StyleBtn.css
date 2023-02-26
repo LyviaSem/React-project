@@ -1,0 +1,20 @@
+.btn-vert{
+    background-color:#CCE3C6;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-blanc{
+    background-color:#fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}

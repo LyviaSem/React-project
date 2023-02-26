@@ -1,0 +1,26 @@
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-erreur {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.mr-monop {
+    position: absolute;
+    opacity: 0.3;
+    max-height: 100%;
+    z-index: -1;
+}
+
+a {
+    text-decoration: underline;
+    color: #EB8B2C;
+    text-shadow: 0px 0px 3px lightgray;
+}

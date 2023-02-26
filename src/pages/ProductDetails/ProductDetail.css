@@ -1,0 +1,19 @@
+.detail {
+    margin: 0 auto;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.success-message {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif, normal;
+    font-weight: 450;
+    color: rgb(86, 162, 86);
+}
