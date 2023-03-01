@@ -9,6 +9,7 @@ import Button from "../../Components/Btn/BtnValidePanier";
 const Panier = () => {
   const { cart } = useContext(StoreContext);
   const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
+  console.log(cart);
 
   return (
     <div>

@@ -1,0 +1,119 @@
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.carte-credit{
+    width: 500px;
+    height: 200px;
+    /* background-color: black; */
+    color: white;
+    cursor: pointer;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.carte-contenu{
+    height: 300px;
+    width: 100%;
+    position: relative;
+    /*margin-bottom: 0;*/
+    padding-bottom: 0;
+}
+
+.front{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    letter-spacing: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* .e-flex{
+   display: flex;
+   /*justify-content: space-between;
+   align-items: center; 
+} */
+
+.input-carte{
+    width: 100px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.carte-numero{
+    width: 400px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+    text-align: center;
+}
+
+.puce{
+    margin-bottom: -20px;
+}
+
+.numero-carte{
+    font-size: 20px;
+    margin-top: 20px;
+    /*padding: 0 25px;*/
+    align-items: center; 
+}
+
+.date-exp {
+    display: flex;
+    align-items: center; /* Pour centrer les éléments verticalement */
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.text-date-exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pour centrer les éléments horizontalement */
+    margin-right: 1rem;
+}
+  
+.text-date-exp-item {
+    margin: 0;
+}
+  
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Pour aligner l'input à gauche */
+}
+
+.text {
+    display: flex;
+    justify-content: space-between; /* Pour aligner les divs aux extrémités */
+    margin-bottom: 0;
+}
+  
+.nom, .CVC {
+    flex-basis: 45%; /* Pour donner une largeur à chaque div */
+}
+
+.p{
+    font-size: 15px;
+}
+
+
+  
+  
+  
+  
+  
+

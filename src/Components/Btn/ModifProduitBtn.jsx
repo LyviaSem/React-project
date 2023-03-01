@@ -8,7 +8,7 @@ const ModifButton = (props) => {
     }
 
 
-    return <button className="btn-vert" onClick={modifbtn}>Informations</button>
+    return <button className="btn-vert" onClick={modifbtn}>Modifier</button>
 }
 
 export default ModifButton;

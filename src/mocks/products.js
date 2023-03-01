@@ -36,21 +36,21 @@ export const PRODUCTS = [
                         idplat: 1,
                         title: "Le Cheddar Poulet",
                         ingredient: ["Oignons", "Cornichons", "Poulet panés", "Cheddar", "Sauce blanche"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Gluten", "Graine de sésame", "Lactose"],
                         price: 12
                     },
                     {
                         idplat: 2,
                         title: "Le Mexicain",
                         ingredient: ["Poulet panés", "Guacamole", "Tomates", "Oignon", "Mozarrella"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Gluten", "Graine de sésame", "Lactose"],
                         price: 12
                     },
                     {
                         idplat: 3,
                         title: "Le Chèvre Miel",
                         ingredient: ["Poulet panés", "Chèvre", "Sauce au miel", "Salade", "Tomate", "Oignon caramélisé"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Gluten", "Graine de sésame", "Lactose"],
                         price: 12
                     }
 
@@ -83,21 +83,21 @@ export const PRODUCTS = [
                         idplat: 4,
                         title: "Le Raclette",
                         ingredient: ["Steak haché", "Salade", "Fromage à raclette", "Sauce moutarde à l’ancienne", "Tomates" , "Oignon"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Gluten", "Graine de sésame", "Lactose"],
                         price: 12
                     },
                     {
                         idplat: 5,
                         title: "Le Cheeseburger",
                         ingredient: ["Boeuf", "Cornichon", "Tomates", "Cheddar", "Ketchup"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Gluten", "Graine de sésame", "Lactose"],
                         price: 12
                     },
                     {
                         idplat: 6,
                         title: "Le Big Breakfast",
                         ingredient: ["Boeuf", "Bacon", "Cheddar", "Oeuf", "Oignon"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Gluten", "Graine de sésame", "Lactose"],
                         price: 12
                     }
 
@@ -130,21 +130,21 @@ export const PRODUCTS = [
                         idplat: 7,
                         title: "Le Chèvre Pané",
                         ingredient: ["Chèvre pané", "Tomates", "Salade", "Sauce blanche"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Lactose"],
                         price: 12
                     },
                     {
                         idplat: 8,
                         title: "Le Veggie Mexicain",
                         ingredient: ["Cheddar", "Tomates", "Choux", "Avocat", "Palet de légumes"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Lactose"],
                         price: 12
                     },
                     {
                         idplat: 9,
                         title: "Le Veggie Gouda",
                         ingredient: ["Salade", "Gouda", "Oignon", "Sauce moutarde", "Escalope végétarienne"],
-                        allergenes:["Gluten, ", "Graine de sésame, ", "Lait"],
+                        allergenes:["Lactose"],
                         price: 12
                     }
 
@@ -185,21 +185,21 @@ export const PRODUCTS = [
                         idplat: 10,
                         title: "La Margherita",
                         ingredient: ["Sauce tomate", "Mozzarella", "Basilic", "Huile d’olive"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     },
                     {
                         idplat: 11,
                         title: "La Saucisse Italienne",
                         ingredient: ["Sauce tomate", "Mozzarella", "Saucisses italiennes", "Oignons rouge", "Poivrons vert", "origan"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     },
                     {
                         idplat: 12,
                         title: "La Légumes Grillés",
                         ingredient: ["Sauce tomate", "Mozzarella", "Aubergines", "Courgettes", "Poivrons rouges", "Oignons rouges", "Origan"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     }
 
@@ -232,21 +232,21 @@ export const PRODUCTS = [
                         idplat: 13,
                         title: "La Pepperoni",
                         ingredient: ["Sauce tomate", "Mozzarella", "Pepperoni", "Champigons", "Oignons rouges", "Origan"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     },
                     {
                         idplat: 14,
                         title: "La Quatre Fromages",
                         ingredient: ["Sauce tomate", "Gorgonzola", "Roquefort", "Parmesan rapé", "Basilic"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     },
                     {
                         idplat: 15,
                         title: "La Jambon Champignons",
                         ingredient: ["Sauce tomate", "Jambon", "Mozzarella", "Champignons", "Origan"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     }
 
@@ -279,21 +279,21 @@ export const PRODUCTS = [
                         idplat: 16,
                         title: "La Épinards Mozzarella",
                         ingredient: ["Épinards hachés", "Mozzarella", "Ricotta", "Oignons", "Origan"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     },
                     {
                         idplat: 17,
                         title: "La Boursin",
                         ingredient: ["Tomates séchées", "Boursin", "Mozzarella", "Ricotta", "Origa"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     },
                     {
                         idplat: 18,
                         title: "La Saumon Fumé",
                         ingredient: ["Saumon fumé", "Mozzarella", "Ricotta", "Oignons", "Origan"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 13
                     }
 
@@ -333,21 +333,21 @@ export const PRODUCTS = [
                         idplat: 19,
                         title: "Salade César",
                         ingredient: ["Salade verte", "Poulet", "Parmesan", "Crouton", "Sauce vinegrette"],
-                        allergenes:["lait, ", "Gluten"],
+                        allergenes:["Lactose", "Gluten"],
                         price: 15
                     },
                     {
                         idplat: 20,
                         title: "Salade Lyonnaise",
                         ingredient: ["Salade de saison","lard", "Oeuf", "Sauce vinegrette"],
-                        allergenes:"aucun",
+                        allergenes:["aucun"],
                         price: 15
                     },
                     {
                         idplat: 21,
                         title: "Salade Savoyarde",
                         ingredient: ["Salade verte", "Tomate", "Champignon", "Jambon", "Pignon", "Crouton", "Fromage à raclette"],
-                        allergenes:["Gluteen, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 15
                     }
                 ]
@@ -475,7 +475,7 @@ export const PRODUCTS = [
                         idplat: 28,
                         title: "Carbonara",
                         ingredient: ["Tagliatelles", "Oeufs", "Pancetta", "Pecorino", "Sel", "Poivre"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 20
                     },
                     {
@@ -489,7 +489,7 @@ export const PRODUCTS = [
                         idplat: 30,
                         title: "Crevettes",
                         ingredient: ["Penne", "Crevettes", "Ail", "Oignon", "Poivron rouge", "Crème fraiche", "Sel", "Poivre"],
-                        allergenes:["Gluten, ", "Lait, ", "Crevette"],
+                        allergenes:["Gluten", "Lactose", "Crustacé"],
                         price: 20
                     }
 
@@ -522,7 +522,7 @@ export const PRODUCTS = [
                         idplat: 31,
                         title: "Primavera",
                         ingredient: ["Liguine", "Courgettes", "Poivron", "Champignon", "Crème", "Sel", "Poivre"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 20
                     },
                     {
@@ -536,7 +536,7 @@ export const PRODUCTS = [
                         idplat: 33,
                         title: "Puttanesca",
                         ingredient: ["Tagliatelle", "Olives", "Anchois", "Ail", "Crème"],
-                        allergenes:["Gluten, ", "Lait"],
+                        allergenes:["Gluten", "Lactose"],
                         price: 20
                     }
 

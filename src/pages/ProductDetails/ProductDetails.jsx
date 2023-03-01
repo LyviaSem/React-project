@@ -26,6 +26,20 @@ const ProductDetails = () => {
     const { cart, setCart } = useContext(StoreContext);
     const [successMessage, setSuccessMessage] = useState("");
     const quantityInput = useRef();
+    const [ingredientsSelectionnes, setIngredientsSelectionnes] = useState([]);
+      
+        
+    const toggleIngredient = (ingredient) => {
+        if (ingredientsSelectionnes.includes(ingredient)) {
+            setIngredientsSelectionnes(ingredientsSelectionnes.filter((i) => i !== ingredient));
+        } else {
+            setIngredientsSelectionnes([...ingredientsSelectionnes, ingredient]);
+        }
+    };
+
+    const isIngredientSelectionne = (ingredient) => {
+        return ingredientsSelectionnes.includes(ingredient);
+    };
 
     const addToCart = () => {
         const productCartIndex = cart.findIndex(product => JSON.stringify(product.meal) === JSON.stringify({ plat: produit.title }));
@@ -49,10 +63,12 @@ const ProductDetails = () => {
 
             <div className="detail">
                 {produit.ingredient.map((ingredient) =>
-                    <p key={ingredient}>{ingredient}</p>
+                    // <p key={ingredient}>{ingredient}</p>
+                    <button key={ingredient} onClick={() => toggleIngredient(ingredient)}>{ingredient}</button>
 
                 )}
-                <p key={produit.allergenes}>Les allergènes : {produit.allergenes}</p>
+                <p>les allergenes: {produit.allergenes.join(', ')}</p>
+                <p>Ingrédients sélectionnés : {ingredientsSelectionnes.join(', ')}</p>
                 <p key={produit.price}>Prix : {produit.price}€</p>
             </div>
 
