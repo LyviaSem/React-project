@@ -76,7 +76,7 @@ const Menu = () => {
 
                 <div>
                     <select value={selectedOptions.plat} onChange={handleSelection("plat")}>
-                        <option value="">Sélectionnez une option</option>
+                        <option value="">Sélectionnez un plat</option>
                         {products.plat.map((plat, i) =>
                             <option key={i} value={plat.title}>{plat.title}</option>
 
@@ -86,7 +86,7 @@ const Menu = () => {
 
                 <div>
                     <select value={selectedOptions.accompagnement} onChange={handleSelection("accompagnement")}>
-                        <option value="">Sélectionnez une option</option>
+                        <option value="">Sélectionnez un accompagnement</option>
                         {products.accompaniments.map((acc, i) =>
                             <option key={i} value={acc.label}>{acc.label}</option>
                         )}
@@ -95,7 +95,7 @@ const Menu = () => {
 
                 <div>
                     <select value={selectedOptions.boisson} onChange={handleSelection("boisson")}>
-                        <option value="">Sélectionnez une option</option>
+                        <option value="">Sélectionnez une boisson</option>
                         {products.boissons.map((boisson, i) =>
                             <option key={i} value={boisson.label}>{boisson.label}</option>
                         )}
@@ -104,7 +104,7 @@ const Menu = () => {
 
                 <div>
                     <select value={selectedOptions.dessert} onChange={handleSelection("dessert")}>
-                        <option value="">Sélectionnez une option</option>
+                        <option value="">Sélectionnez un dessert</option>
                         {products.desserts.map((dessert, i) =>
                             <option key={i} value={dessert.label}>{dessert.label}</option>
 

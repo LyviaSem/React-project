@@ -489,7 +489,7 @@ export const PRODUCTS = [
                         idplat: 30,
                         title: "Crevettes",
                         ingredient: ["Penne", "Crevettes", "Ail", "Oignon", "Poivron rouge", "Crème fraiche", "Sel", "Poivre"],
-                        allergenes:["Gluten", "Lactose", "Crustacé"],
+                        allergenes:["Gluten", "Lactose", "Crustacés"],
                         price: 20
                     }
 
